@@ -1,0 +1,4 @@
+﻿  BMICalculator.cpp
+C:\Users\Samuel Surdam\source\repos\BMICalculator\BMICalculator\BMICalculator.cpp(14,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Samuel Surdam\source\repos\BMICalculator\BMICalculator\BMICalculator.cpp(20,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  BMICalculator.vcxproj -> C:\Users\Samuel Surdam\source\repos\BMICalculator\x64\Debug\BMICalculator.exe
