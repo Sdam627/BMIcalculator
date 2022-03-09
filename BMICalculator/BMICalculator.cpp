@@ -13,7 +13,7 @@ float weighttokg(float weight) {
     float kg;
     kg = weight * 0.45359237;
 
-    cout << "Your weight in kilograms is: " << kg << endl;
+    cout << endl << "Your weight in kilograms is: " << kg << endl;
     return kg;
 }
 
