@@ -12,12 +12,16 @@ using namespace std;
 float weighttokg(float weight) {
     float kg;
     kg = weight * 0.45359237;
+
+    cout << "Your weight in kilograms is: " << kg << endl;
     return kg;
 }
 
 float feettoinch(float feet, float inches) {
     float m;
     m = ((feet * 12) + inches) * 0.0254;
+
+    cout << "Your height in meters is: " << m << endl;
     return m;
 }
 
@@ -37,7 +41,7 @@ float getweight() {
     while (true) {
         cin >> userweight;
 
-        if (!cin) {
+        if (!cin || userweight < 0) {
             cout << "Wrong format. Please enter an integer or float value." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -63,7 +67,7 @@ float getheightfeet() {
     ***************************************************************************************/
     while (true) {
         cin >> userfeet;
-        if (!cin) {
+        if (!cin || userfeet < 0) {
             cout << "Wrong format. Please enter an integer value." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -113,7 +117,7 @@ float calculatebmi(float weight, float feet, float inches)
     BMI = convertedkg / (convertedfeettoinch * convertedfeettoinch);
 
     cout << endl << "============= YOUR BMI IS: ============= " << endl;
-    cout << endl << "BMI: " << fixed << setprecision(1) << BMI;
+    cout << endl << "BMI: " << fixed << setprecision(2) << BMI;
     if (BMI < 18.5) {
         cout << endl << "Your BMI is " << BMI << ", indicating your weight is in the UNDERWEIGHT category for adults of your height." << endl;
     }
